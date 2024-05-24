@@ -1,0 +1,12 @@
+El torneo cuenta con una colección de partidos y entrega premios a los ganadores de cada partido. 
+
+En cada partido se gestiona un coeficiente base cuyo valor por defecto es 0.5  y es aplicado a la cantidad de goles y a la cantidad de jugadores de cada equipo.
+
+ES DECIR: coef =  0,5 * cantGoles * cantJugadores  donde cantGoles : es la cantidad de goles;   cantJugadores : es la cantidad de jugadores.
+
+Si se trata de un partido de fútbol, se deben gestionar el valor de 3 coeficientes que serán aplicados según la categoría del partido (coef_Menores,coef_juveniles,coef_Mayores) 
+(VER TABLA EN GDOCS)
+
+si se trata de un partido de basquetbol  se almacena la cantidad de infracciones de manera tal que al coeficiente base se debe restar un coeficiente de penalización,
+ cuyo valor por defecto es: 0.75, * (por) la cantidad de infracciones. Es decir:
+coef  = coeficiente_base_partido  - (coef_penalización*cant_infracciones);
